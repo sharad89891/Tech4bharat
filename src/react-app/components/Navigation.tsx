@@ -31,7 +31,9 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="gradient-text font-bold text-xl">Tech For Bharat</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 font-bold text-xl">
+              Tech For Bharat
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +53,7 @@ export default function Navigation() {
             ))}
             <Link
               to="/register"
-              className="px-6 py-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Register
             </Link>
@@ -86,7 +88,7 @@ export default function Navigation() {
               ))}
               <Link
                 to="/register"
-                className="px-6 py-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
+                className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Register

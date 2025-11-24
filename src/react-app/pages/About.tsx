@@ -16,13 +16,13 @@ export default function AboutPage() {
     },
     {
       icon: Users,
-      title: 'National Capacity',
-      description: 'Strengthening India\'s technological capabilities'
+      title: 'Capacity Building',
+      description: 'Strengthening technological capabilities'
     },
     {
       icon: TrendingUp,
       title: 'Meaningful Impact',
-      description: 'Contributing to Bharat\'s technological growth'
+      description: 'Contributing to technological growth'
     }
   ]
 
@@ -37,9 +37,9 @@ export default function AboutPage() {
   ]
 
   const knowledgePartners = [
-    { name: 'COEP Tech University', location: 'Pune', icon: School },
-    { name: 'VJTI', location: 'Mumbai', icon: Building },
-    { name: 'CDTIES', location: 'IIT Bombay', icon: Briefcase }
+    { name: 'Tech University', location: 'Location', icon: School },
+    { name: 'University', location: 'Location', icon: Building },
+    { name: 'Research Center', location: 'Location', icon: Briefcase }
   ]
 
   return (
@@ -54,11 +54,11 @@ export default function AboutPage() {
         {/* Animated Gradients */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.1),transparent_50%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(251,191,36,0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_50%)]" />
         </div>
 
         {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-amber-400/20 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-2xl animate-pulse" />
         <div className="absolute bottom-40 right-20 w-32 h-32 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-700" />
         <div className="absolute top-1/2 right-10 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl animate-pulse delay-1000" />
 
@@ -66,8 +66,8 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6 animate-in fade-in slide-in-from-top duration-700">
-              <span className="text-2xl">🇮🇳</span>
-              <span className="text-sm font-semibold text-gray-700">National Initiative</span>
+              <span className="text-2xl">🌐</span>
+              <span className="text-sm font-semibold text-gray-700">Global Initiative</span>
             </div>
 
             {/* Main Heading */}
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
               <div className="glass-effect rounded-3xl p-8 md:p-12">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Tech For Bharat is a national initiative dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation, strengthen national capabilities, and contribute meaningfully to the technological advancement of Bharat.
+                  Tech For Bharat is an initiative dedicated to empowering youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation and contribute meaningfully to technological advancement.
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of India's digital landscape.
+                Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of the digital landscape.
               </p>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 Knowledge <span className="gradient-text">Partners</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-amber-500 mx-auto mb-6" />
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Collaborating with leading institutions to deliver world-class education
               </p>
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 Research <span className="gradient-text">Areas</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-amber-500 mx-auto mb-6" />
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Our programs cover cutting-edge technologies and research domains
               </p>

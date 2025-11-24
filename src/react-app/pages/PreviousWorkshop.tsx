@@ -39,7 +39,7 @@ export default function PreviousWorkshopPage() {
                 Previous <span className="gradient-text">Workshop</span>
               </h1>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                AI Workshop by BharatGen - India's first government-funded Multimodal Large Language Model (LLM)
+                AI Workshop by GenAI Platform - Multimodal Large Language Model (LLM)
               </p>
             </div>
 
@@ -51,13 +51,13 @@ export default function PreviousWorkshopPage() {
                   <span className="text-sm font-semibold text-purple-600">Past Workshop</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
-                  AI Workshop by <span className="gradient-text">BharatGen</span>
+                  AI Workshop by <span className="gradient-text">GenAI</span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-2">
-                  GenAI for Bharat, by Bharat
+                  GenAI for Everyone, by Everyone
                 </p>
                 <p className="text-md text-gray-600 mb-4">
-                  India's first government-funded Multimodal Large Language Model (LLM)
+                  Multimodal Large Language Model (LLM)
                 </p>
                 <div className="inline-block bg-gradient-to-r from-green-100 to-emerald-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   <Award className="w-4 h-4 inline mr-1" />
@@ -82,13 +82,13 @@ export default function PreviousWorkshopPage() {
 
                 <div className="bg-white rounded-2xl p-6 shadow-lg">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-800">Venue</h3>
-                      <p className="text-gray-600">Cognizant Lab, AC Ground Floor</p>
-                      <p className="text-gray-600">COEP Technological University</p>
+                      <p className="text-gray-600">AI Lab, Main Building</p>
+                      <p className="text-gray-600">University Campus</p>
                     </div>
                   </div>
                 </div>
@@ -121,16 +121,16 @@ export default function PreviousWorkshopPage() {
               </div>
 
               {/* Organizers */}
-              <div className="bg-gradient-to-r from-amber-50 to-purple-50 rounded-2xl p-6 mb-6 border border-amber-200">
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 mb-6 border border-blue-200">
                 <h3 className="text-lg font-bold text-center text-gray-800 mb-3">Organized By</h3>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                   <div className="flex items-center gap-2">
-                    <Users className="w-5 h-5 text-amber-600" />
-                    <span className="font-semibold text-amber-700">Team URJA (COEP Technological University)</span>
+                    <Users className="w-5 h-5 text-blue-600" />
+                    <span className="font-semibold text-blue-700">University Team</span>
                   </div>
                   <div className="hidden sm:block text-gray-400">+</div>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-purple-700">BharatGen</span>
+                    <span className="font-semibold text-purple-700">GenAI</span>
                   </div>
                 </div>
               </div>
@@ -139,13 +139,13 @@ export default function PreviousWorkshopPage() {
               <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-200">
                 <h3 className="text-lg font-bold text-center text-gray-800 mb-3">Our Vision</h3>
                 <p className="text-center text-gray-700 mb-3">
-                  "Explore AI innovations Made in India, Made for India."
+                  "Explore AI innovations for everyone."
                 </p>
                 <p className="text-center text-gray-700">
                   Real-world applications discussed: Agriculture, Healthcare, and more.
                 </p>
                 <p className="text-center text-gray-700 mt-2">
-                  Goal: Inspire AI-driven solutions to strengthen the vision of Atmanirbhar Bharat in AI.
+                  Goal: Inspire AI-driven solutions for technological advancement.
                 </p>
               </div>
             </div>

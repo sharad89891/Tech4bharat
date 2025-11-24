@@ -81,7 +81,7 @@ export default function RegisterPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Venue:</p>
-                    <p className="text-gray-700">COEP Technological University Pune</p>
+                    <p className="text-gray-700">University Campus</p>
                   </div>
                 </div>
               </div>
@@ -89,14 +89,14 @@ export default function RegisterPage() {
               <div className="max-w-3xl mx-auto glass-effect rounded-2xl p-6 mb-8 text-left">
                 <h3 className="text-xl font-bold mb-3 text-gray-800">Organised By:</h3>
                 <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4">
-                  <li>COEP Technological University Pune (COEP)</li>
-                  <li>Veermata Jijabai Technological Institute (VJTI), Mumbai</li>
+                  <li>University</li>
+                  <li>Technical Institute</li>
                 </ol>
                 
                 <h3 className="text-xl font-bold mt-4 mb-3 text-gray-800">Academic Partner:</h3>
                 <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4">
-                  <li>Centre for Defence Technology Innovations and strategies (CDTIES), IIT Bombay</li>
-                  <li>Observer Research Foundation (ORF)</li>
+                  <li>Research Center</li>
+                  <li>Research Foundation</li>
                 </ol>
                 
                 <div className="mt-4 p-4 bg-blue-50 rounded-xl">
@@ -327,10 +327,10 @@ export default function RegisterPage() {
                   </div>
                 </div>
 
-                {/* How you would like to contribute to "Viksit Bharat" in technology sector */}
+                {/* How you would like to contribute to technological advancement */}
                 <div>
                   <label htmlFor="contribution" className="block text-lg font-medium text-gray-800 mb-3">
-                    How you would like to contribute to "Viksit Bharat" in technology sector. <span className="text-red-500">*</span>
+                    How you would like to contribute to technological advancement. <span className="text-red-500">*</span>
                   </label>
                   <p className="text-sm text-gray-600 mb-3">Answer in Max 150 Words</p>
                   <div className="relative">
@@ -346,7 +346,7 @@ export default function RegisterPage() {
                       rows={4}
                       maxLength={150}
                       className="block w-full pl-12 pr-4 py-4 bg-white border border-gray-300 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
-                      placeholder="Describe how you would like to contribute to Viksit Bharat in the technology sector..."
+                      placeholder="Describe how you would like to contribute to technological advancement..."
                     />
                     <div className="text-right text-sm text-gray-500 mt-1">
                       {formData.contribution.length}/150 characters
@@ -423,7 +423,7 @@ export default function RegisterPage() {
                 <div className="text-center pt-4">
                   <button
                     type="submit"
-                    className="px-10 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                    className="px-10 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   >
                     Submit Registration
                   </button>

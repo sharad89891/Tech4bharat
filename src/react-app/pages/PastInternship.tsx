@@ -18,7 +18,7 @@ export default function PastInternshipPage() {
     },
     { 
       title: 'Natural Language Processing', 
-      description: 'Working on multilingual NLP models for Indian languages' 
+      description: 'Working on multilingual NLP models' 
     },
     { 
       title: 'Computer Vision', 
@@ -39,7 +39,7 @@ export default function PastInternshipPage() {
                 Past <span className="gradient-text">Internship</span>
               </h1>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                VJTI Centre of Excellence in Artificial Intelligence
+                University Centre of Excellence in Artificial Intelligence
               </p>
             </div>
 
@@ -51,7 +51,7 @@ export default function PastInternshipPage() {
                   <span className="text-sm font-semibold text-purple-600">Past Internship</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                  VJTI <span className="gradient-text">AI Internship</span>
+                  University <span className="gradient-text">AI Internship</span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-2">
                   Centre of Excellence in Artificial Intelligence
@@ -82,13 +82,13 @@ export default function PastInternshipPage() {
 
                 <div className="bg-white rounded-2xl p-6 shadow-lg">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-800">Location</h3>
-                      <p className="text-gray-600">VJTI Mumbai AI Lab</p>
-                      <p className="text-gray-600">Mumbai, Maharashtra</p>
+                      <p className="text-gray-600">University AI Lab</p>
+                      <p className="text-gray-600">Location</p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function PastInternshipPage() {
                     <div className="text-sm text-gray-700">Selected Interns</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-amber-600 mb-1">8</div>
+                    <div className="text-2xl font-bold text-blue-600 mb-1">8</div>
                     <div className="text-sm text-gray-700">Research Areas</div>
                   </div>
                   <div className="text-center">
@@ -132,12 +132,12 @@ export default function PastInternshipPage() {
               </div>
 
               {/* Learning Outcomes */}
-              <div className="bg-gradient-to-r from-amber-50 to-purple-50 rounded-2xl p-6 mb-6 border border-amber-200">
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 mb-6 border border-blue-200">
                 <h3 className="text-lg font-bold text-center text-gray-800 mb-3">Skills Gained</h3>
                 <div className="flex flex-wrap justify-center gap-2">
                   <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-purple-600 border border-purple-200">Python</span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-indigo-600 border border-indigo-200">TensorFlow</span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-amber-600 border border-amber-200">PyTorch</span>
+                  <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600 border border-blue-200">PyTorch</span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-pink-600 border border-pink-200">Computer Vision</span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600 border border-green-200">NLP</span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600 border border-blue-200">Deep Learning</span>
@@ -149,8 +149,8 @@ export default function PastInternshipPage() {
                 <h3 className="text-lg font-bold text-center text-gray-800 mb-3">Organized By</h3>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                   <div className="flex items-center gap-2">
-                    <Users className="w-5 h-5 text-amber-600" />
-                    <span className="font-semibold text-amber-700">VJTI Mumbai</span>
+                    <Users className="w-5 h-5 text-blue-600" />
+                    <span className="font-semibold text-blue-700">University</span>
                   </div>
                   <div className="hidden sm:block text-gray-400">+</div>
                   <div className="flex items-center gap-2">

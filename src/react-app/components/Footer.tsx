@@ -15,7 +15,7 @@ export default function Footer() {
                 </span>
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                A national initiative empowering India's youth with cutting-edge technology skills 
+                An initiative empowering youth with cutting-edge technology skills 
                 and training programs across critical domains.
               </p>
             </div>
@@ -72,8 +72,8 @@ export default function Footer() {
               <ul className="space-y-2 text-gray-300">
                 <li>🎓 Digital & Tech Policy Workshop</li>
                 <li>📅 18-23 December 2025</li>
-                <li>📍 COEP Tech University, Pune</li>
-                <li>🤝 COEP & VJTI Collaboration</li>
+                <li>📍 University Campus</li>
+                <li>🤝 University Collaboration</li>
               </ul>
             </div>
           </div>
@@ -87,14 +87,14 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <span>Made with</span>
                 <Heart className="w-4 h-4 text-red-500 fill-current" />
-                <span>for India's Tech Future 🇮🇳</span>
+                <span>for Tech Future</span>
               </div>
             </div>
 
-            {/* Atmanirbhar Bharat */}
+            {/* Innovation Focus */}
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-400">
-                Supporting <span className="text-orange-400 font-semibold">Atmanirbhar Bharat</span> in Technology
+                Supporting <span className="text-blue-400 font-semibold">Innovation</span> in Technology
               </p>
             </div>
           </div>

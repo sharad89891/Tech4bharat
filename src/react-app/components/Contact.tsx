@@ -42,13 +42,13 @@ export default function Contact() {
   }
   const contacts = [
     {
-      name: 'Suraj',
-      phone: '9423076154',
+      name: 'Coordinator',
+      phone: '1234567890',
       role: 'Program Coordinator'
     },
     {
-      name: 'Anway',
-      phone: '8275173653',
+      name: 'Technical Lead',
+      phone: '0987654321',
       role: 'Technical Lead'
     }
   ]
@@ -88,11 +88,11 @@ export default function Contact() {
                   </div>
                 </div>
                 <a
-                  href={`tel:+91${contact.phone}`}
+                  href={`tel:${contact.phone}`}
                   className="flex items-center gap-3 p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors group"
                 >
                   <Phone className="w-5 h-5 text-blue-600 group-hover:rotate-12 transition-transform" />
-                  <span className="text-lg font-semibold text-gray-800">+91 {contact.phone}</span>
+                  <span className="text-lg font-semibold text-gray-800">{contact.phone}</span>
                 </a>
               </div>
             ))}
@@ -103,18 +103,18 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-600 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-blue-600 rounded-xl flex items-center justify-center">
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">Tech For Bharat</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  A national initiative empowering India's youth with cutting-edge technology skills 
+                  An initiative empowering youth with cutting-edge technology skills 
                   and training programs across critical domains.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                   <div className="w-2 h-2 bg-orange-600 rounded-full" />
-                  <span>Empowering India's Tech Future</span>
+                  <span>Empowering Tech Future</span>
                 </div>
               </div>
 
@@ -126,10 +126,10 @@ export default function Contact() {
                   <h3 className="text-2xl font-bold text-gray-800">Location</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold">COEP Technological University</span><br />
-                  College of Engineering Pune<br />
-                  Wellesley Rd, Shivajinagar<br />
-                  Pune, Maharashtra 411005
+                  <span className="font-semibold">University Campus</span><br />
+                  Main Campus<br />
+                  Location Address<br />
+                  City, State, ZIP
                 </p>
               </div>
             </div>
@@ -202,9 +202,8 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      pattern="[0-9]{10}"
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                      placeholder="10-digit mobile number"
+                      placeholder="Mobile number"
                     />
                   </div>
 

@@ -60,14 +60,14 @@ export default function WorkshopPage() {
                       </div>
                     </div>
 
-                    <div className="bg-white rounded-xl p-4 shadow-md border border-amber-100">
+                    <div className="bg-white rounded-xl p-4 shadow-md border border-blue-100">
                       <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                           <MapPin className="w-4 h-4 text-white" />
                         </div>
                         <div>
                           <h3 className="font-bold text-gray-800 text-sm">Location</h3>
-                          <p className="text-xs text-gray-600">COEP Tech University, Pune</p>
+                          <p className="text-xs text-gray-600">University Campus</p>
                         </div>
                       </div>
                     </div>
@@ -80,13 +80,13 @@ export default function WorkshopPage() {
                       <div className="bg-white rounded-xl p-4 shadow-md border border-purple-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-purple-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">COEP Tech University</span> Pune</p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">Tech University</span></p>
                         </div>
                       </div>
                       <div className="bg-white rounded-xl p-4 shadow-md border border-indigo-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-indigo-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">VJTI</span> Mumbai</p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">University</span></p>
                         </div>
                       </div>
                     </div>
@@ -99,13 +99,13 @@ export default function WorkshopPage() {
                       <div className="bg-white rounded-xl p-4 shadow-md border border-green-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-green-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">CDTIES</span>, IIT Bombay</p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">Research Center</span></p>
                         </div>
                       </div>
                       <div className="bg-white rounded-xl p-4 shadow-md border border-emerald-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-emerald-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">Observer Research Foundation</span></p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">Research Foundation</span></p>
                         </div>
                       </div>
                     </div>
@@ -113,7 +113,7 @@ export default function WorkshopPage() {
                 </div>
 
                 {/* Registration Section */}
-                <div className="rounded-2xl p-6 border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-white to-purple-50 shadow-xl">
+                <div className="rounded-2xl p-6 border-2 border-blue-200 bg-gradient-to-br from-blue-50 via-white to-purple-50 shadow-xl">
                   <h3 className="text-xl sm:text-2xl font-bold mb-3 font-['Montserrat']">
                     Ready to Join the Workshop?
                   </h3>
@@ -122,7 +122,7 @@ export default function WorkshopPage() {
                   </p>
                   <Link
                     to="/register"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   >
                     Register Now
                     <ArrowRight className="w-3 h-3" />
@@ -171,14 +171,14 @@ export default function WorkshopPage() {
                     </div>
                   </div>
 
-                  <div className="bg-white rounded-xl p-4 shadow-md border border-amber-100">
+                  <div className="bg-white rounded-xl p-4 shadow-md border border-blue-100">
                     <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                         <MapPin className="w-4 h-4 text-white" />
                       </div>
                       <div>
                         <h3 className="font-bold text-gray-800 text-sm">Location</h3>
-                        <p className="text-xs text-gray-600">COEP Tech University, Pune</p>
+                        <p className="text-xs text-gray-600">University Campus</p>
                       </div>
                     </div>
                   </div>
@@ -191,13 +191,13 @@ export default function WorkshopPage() {
                     <div className="bg-white rounded-xl p-4 shadow-md border border-purple-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-purple-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">COEP Tech University</span> Pune</p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">Tech University</span></p>
                       </div>
                     </div>
                     <div className="bg-white rounded-xl p-4 shadow-md border border-indigo-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-indigo-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">VJTI</span> Mumbai</p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">University</span></p>
                       </div>
                     </div>
                   </div>
@@ -210,13 +210,13 @@ export default function WorkshopPage() {
                     <div className="bg-white rounded-xl p-4 shadow-md border border-green-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-green-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">CDTIES</span>, IIT Bombay</p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">Research Center</span></p>
                       </div>
                     </div>
                     <div className="bg-white rounded-xl p-4 shadow-md border border-emerald-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-emerald-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">Observer Research Foundation</span></p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">Research Foundation</span></p>
                       </div>
                     </div>
                   </div>
@@ -224,7 +224,7 @@ export default function WorkshopPage() {
               </div>
 
               {/* Registration Section */}
-              <div className="text-center rounded-2xl p-8 border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-white to-purple-50 shadow-xl">
+              <div className="text-center rounded-2xl p-8 border-2 border-blue-200 bg-gradient-to-br from-blue-50 via-white to-purple-50 shadow-xl">
                 <h3 className="text-2xl sm:text-3xl font-bold mb-4 font-['Montserrat']">
                   Ready to Join the Workshop?
                 </h3>
@@ -233,7 +233,7 @@ export default function WorkshopPage() {
                 </p>
                 <Link
                   to="/register"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full font-bold text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   Register Now
                   <ArrowRight className="w-4 h-4" />
@@ -273,7 +273,7 @@ export default function WorkshopPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800">Venue:</h4>
-                        <p className="text-gray-700">COEP Technological University Pune</p>
+                        <p className="text-gray-700">University Campus</p>
                       </div>
                     </div>
                   </div>
@@ -288,15 +288,15 @@ export default function WorkshopPage() {
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Organizers:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                          <li>COEP Technological University Pune (COEP)</li>
-                          <li>Veermata Jijabai Technological Institute (VJTI), Mumbai</li>
+                          <li>Tech University</li>
+                          <li>University</li>
                         </ul>
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Knowledge Partners:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                          <li>Centre for Defence Technology Innovations and Strategies (CDTIES), IIT Bombay</li>
-                          <li>Observer Research Foundation (ORF)</li>
+                          <li>Research Center</li>
+                          <li>Research Foundation</li>
                         </ul>
                       </div>
                     </div>
@@ -338,8 +338,8 @@ export default function WorkshopPage() {
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
                       <li>Are enrolled in premier institutions in Technology, Law, or Management fields</li>
                       <li>Possess a good academic track record</li>
-                      <li>Are passionate about emerging digital technologies, national security, and global governance</li>
-                      <li>Wish to contribute to building the nation's technological capabilities</li>
+                      <li>Are passionate about emerging digital technologies and global governance</li>
+                      <li>Wish to contribute to building technological capabilities</li>
                     </ul>
                   </div>
 
@@ -348,15 +348,15 @@ export default function WorkshopPage() {
                     <h3 className="text-xl font-bold mb-4">Learning Components and Outcomes</h3>
                     <div className="space-y-4">
                       <p className="text-gray-700">
-                        The curriculum includes lectures from defence services experts, industry experts, faculty from premier institutions, and experts from government and think tanks.
+                        The curriculum includes lectures from experts, industry professionals, faculty from premier institutions, and experts from research organizations.
                       </p>
                       
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Activities:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                          <li>Study of global policy frameworks (e.g., Estonia, India, EU AI Act)</li>
+                          <li>Study of global policy frameworks</li>
                           <li>Instruction on how to write policy documents using an evidence-based approach</li>
-                          <li>Simulation exercises on drafting mini policies (e.g., AI in surveillance)</li>
+                          <li>Simulation exercises on drafting mini policies</li>
                         </ul>
                       </div>
                       
@@ -379,8 +379,8 @@ export default function WorkshopPage() {
                       <div>
                         <h4 className="font-semibold text-gray-800">Costs:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                          <li>Deposit: INR 1000 (Refundable upon 100% workshop attendance)</li>
-                          <li>Accommodation & Food: Provided free of charge (Breakfast, Lunch, Dinner). Accommodation is in COEP Hostels (separate for boys and girls)</li>
+                          <li>Deposit: (Refundable upon 100% workshop attendance)</li>
+                          <li>Accommodation & Food: Provided free of charge (Breakfast, Lunch, Dinner). Accommodation is in university hostels (separate for all participants)</li>
                           <li>Travel: Participants must bear their own travel expenses to the venue</li>
                         </ul>
                       </div>
