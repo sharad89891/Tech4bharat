@@ -48,7 +48,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto text-center">
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-100">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-indigo-600 to-amber-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500">
                 Tech For Bharat
               </span>
             </h1>
