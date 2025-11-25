@@ -147,10 +147,10 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                <span className="gradient-text">Event Gallery</span>
+                <span className="gradient-text">Previous Workshops</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-700">
                 Glimpses from our AI workshops and the amazing learning experiences we create
               </p>
             </div>

@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { X } from 'lucide-react'
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
     {
@@ -37,31 +38,58 @@ export default function Gallery() {
     }
   ]
 
+  // Auto-rotate images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, 3000)
+    
+    return () => clearInterval(interval)
+  }, [images.length])
+
   return (
     <div className="py-6 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Gallery Images in a Single Row */}
-          <div className="flex space-x-4 overflow-x-auto pb-4">
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-48 h-32 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 group"
-                onClick={() => setSelectedImage(image.url)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src={image.url}
-                    alt={image.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-2">
-                    <h3 className="text-white font-bold text-xs mb-1 truncate">{image.title}</h3>
-                    <p className="text-white/90 text-xs truncate">{image.description}</p>
+          {/* Gallery Images with Auto Rotation */}
+          <div className="relative h-64 overflow-hidden rounded-xl">
+            <div 
+              className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-full h-full relative"
+                  onClick={() => setSelectedImage(image.url)}
+                >
+                  <div className="relative w-full h-full">
+                    <img
+                      src={image.url}
+                      alt={image.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+                      <h3 className="text-white font-bold text-xl mb-2">{image.title}</h3>
+                      <p className="text-white/90 text-lg">{image.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            
+            {/* Navigation Dots */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-colors ${
+                    index === currentIndex ? 'bg-white' : 'bg-white/50'
+                  }`}
+                  onClick={() => setCurrentIndex(index)}
+                />
+              ))}
+            </div>
           </div>
           
           {/* Lightbox Modal */}
