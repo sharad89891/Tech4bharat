@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { X } from 'lucide-react'
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
     {
@@ -38,59 +37,66 @@ export default function Gallery() {
     }
   ]
 
-  // Auto-rotate images every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 3000)
-    
-    return () => clearInterval(interval)
-  }, [images.length])
-
   return (
     <div className="py-6 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Gallery Images with Auto Rotation */}
-          <div className="relative h-64 overflow-hidden rounded-xl">
-            <div 
-              className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
+          {/* Marquee Gallery */}
+          <div className="relative h-48 overflow-hidden rounded-xl">
+            {/* Marquee animation container */}
+            <div className="absolute inset-0 flex animate-marquee whitespace-nowrap">
+              {/* First set of images */}
               {images.map((image, index) => (
                 <div
-                  key={index}
-                  className="flex-shrink-0 w-full h-full relative"
+                  key={`first-${index}`}
+                  className="mx-2 flex-shrink-0 w-64 h-40 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300"
                   onClick={() => setSelectedImage(image.url)}
                 >
                   <div className="relative w-full h-full">
                     <img
                       src={image.url}
                       alt={image.title}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-contain"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
-                      <h3 className="text-white font-bold text-xl mb-2">{image.title}</h3>
-                      <p className="text-white/90 text-lg">{image.description}</p>
-                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set of images for seamless loop */}
+              {images.map((image, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="mx-2 flex-shrink-0 w-64 h-40 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300"
+                  onClick={() => setSelectedImage(image.url)}
+                >
+                  <div className="relative w-full h-full">
+                    <img
+                      src={image.url}
+                      alt={image.title}
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
                   </div>
                 </div>
               ))}
             </div>
             
-            {/* Navigation Dots */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentIndex ? 'bg-white' : 'bg-white/50'
-                  }`}
-                  onClick={() => setCurrentIndex(index)}
-                />
-              ))}
-            </div>
+            {/* Fade overlays for smooth edges */}
+            <div className="absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10"></div>
+            <div className="absolute top-0 right-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10"></div>
           </div>
+          
+          <style>{`
+            @keyframes marquee {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+            .animate-marquee {
+              animation: marquee 30s linear infinite;
+            }
+          `}</style>
           
           {/* Lightbox Modal */}
           {selectedImage && (
