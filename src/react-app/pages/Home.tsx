@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 import Footer from '@/react-app/components/Footer'
 import Navigation from '@/react-app/components/Navigation'
+import Gallery from '@/react-app/components/Gallery'
 
 export default function Home() {
   const testimonials = [
@@ -28,7 +29,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -138,6 +139,24 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      
+      {/* Gallery Section - Floating Images */}
+      <section className="py-10 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span className="gradient-text">Event Gallery</span>
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                Glimpses from our AI workshops and the amazing learning experiences we create
+              </p>
+            </div>
+          </div>
+        </div>
+        <Gallery />
       </section>
       
       {/* Tech For Bharat Mission Section */}
@@ -253,19 +272,6 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-gray-800">Past Internship</h3>
                 <p className="text-gray-600 text-sm">View our AI internship</p>
-              </Link>
-              
-              <Link 
-                to="/gallery" 
-                className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-pink-100"
-              >
-                <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-800">Gallery</h3>
-                <p className="text-gray-600 text-sm">See photos from our events</p>
               </Link>
             </div>
           </div>

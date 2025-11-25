@@ -21,7 +21,6 @@ export default function Navigation() {
     { name: 'Past Workshop', href: '/previous-workshop' },
     { name: 'Past Internship', href: '/past-internship' },
     { name: 'Upcoming Workshop', href: '/workshop' },
-    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' }
   ]
 
