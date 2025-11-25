@@ -1,11 +1,8 @@
-import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Shield, ChevronDown, ChevronUp } from 'lucide-react'
-import { useState } from 'react'
+import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Shield, School, Building, Briefcase } from 'lucide-react'
 import Navigation from '@/react-app/components/Navigation'
 import Footer from '@/react-app/components/Footer'
 
 export default function AboutPage() {
-  const [expandedFocusArea, setExpandedFocusArea] = useState<number | null>(null)
-  
   const pillars = [
     {
       icon: Target,
@@ -29,42 +26,20 @@ export default function AboutPage() {
     }
   ]
 
-  const focusAreas = [
-    { 
-      name: 'Emerging Technologies', 
-      icon: Brain,
-      description: 'Exploring cutting-edge technologies that will shape the future of digital innovation in India. Our programs cover quantum computing, blockchain, IoT, and other transformative technologies.'
-    },
-    { 
-      name: 'Critical Cyber Technologies', 
-      icon: Monitor,
-      description: 'Developing expertise in cybersecurity, network defense, and critical infrastructure protection to safeguard India\'s digital assets.'
-    },
-    { 
-      name: 'Artificial Intelligence & Machine Learning (AI/ML)', 
-      icon: Code,
-      description: 'Building proficiency in AI/ML algorithms, deep learning, neural networks, and practical applications across industries.'
-    },
-    { 
-      name: 'National Security & Strategic Technologies', 
-      icon: Target,
-      description: 'Focusing on technologies critical for national security, defense systems, and strategic infrastructure development.'
-    },
-    { 
-      name: 'Cyberspace Operations & Digital Defence', 
-      icon: Shield,
-      description: 'Training in offensive and defensive cyberspace operations, digital forensics, and cyber warfare techniques.'
-    },
-    { 
-      name: 'Technology Governance & Tech Policy', 
-      icon: BookOpen,
-      description: 'Understanding regulatory frameworks, ethical considerations, and policy development for emerging technologies.'
-    }
+  const researchAreas = [
+    { name: 'Emerging Technologies', icon: Brain },
+    { name: 'Critical Cyber Technologies', icon: Monitor },
+    { name: 'Artificial Intelligence & Machine Learning (AI/ML)', icon: Code },
+    { name: 'National Security & Strategic Technologies', icon: Target },
+    { name: 'Cyberspace Operations & Digital Defence', icon: Shield },
+    { name: 'Technology Governance & Tech Policy', icon: BookOpen }
   ]
 
-  const toggleFocusArea = (index: number) => {
-    setExpandedFocusArea(expandedFocusArea === index ? null : index)
-  }
+  const knowledgePartners = [
+    { name: 'COEP Tech University', location: 'Pune', icon: School },
+    { name: 'VJTI', location: 'Mumbai', icon: Building },
+    { name: 'CDTIES', location: 'IIT Bombay', icon: Briefcase }
+  ]
 
   return (
     <div className="min-h-screen gradient-bg">
@@ -199,48 +174,71 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Interactive Focus Areas */}
+      {/* Knowledge Partners - Smaller boxes */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                Focus <span className="gradient-text">Areas</span>
+                Knowledge <span className="gradient-text">Partners</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Our programs cover critical technology domains for national development. Click on each area to learn more.
+                Collaborating with leading institutions to deliver world-class education
               </p>
             </div>
 
-            <div className="space-y-6">
-              {focusAreas.map((area, index) => {
-                const Icon = area.icon
-                const isExpanded = expandedFocusArea === index
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {knowledgePartners.map((partner, index) => {
+                const Icon = partner.icon
                 return (
-                  <div 
-                    key={index} 
-                    className="glass-effect rounded-2xl overflow-hidden border border-purple-100 hover:border-purple-300 transition-all duration-300"
+                  <div
+                    key={index}
+                    className="glass-effect rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100"
                   >
-                    <div 
-                      className="flex items-center justify-between p-6 cursor-pointer"
-                      onClick={() => toggleFocusArea(index)}
-                    >
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-800">{area.name}</h3>
+                    <div className="flex flex-col items-center text-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <div className="text-purple-600">
-                        {isExpanded ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-                      </div>
+                      <h3 className="text-lg font-bold mb-1 text-gray-800">{partner.name}</h3>
+                      <p className="text-gray-600 text-sm">{partner.location}</p>
                     </div>
-                    {isExpanded && (
-                      <div className="px-6 pb-6 pt-2 border-t border-gray-100">
-                        <p className="text-gray-700 leading-relaxed">{area.description}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Areas */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                Research <span className="gradient-text">Areas</span>
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Our programs cover cutting-edge technologies and research domains
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {researchAreas.map((area, index) => {
+                const Icon = area.icon
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                    )}
+                      <h3 className="text-lg font-bold text-gray-800">{area.name}</h3>
+                    </div>
                   </div>
                 )
               })}
