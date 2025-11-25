@@ -1,4 +1,4 @@
-import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Heart, Building, School, Briefcase } from 'lucide-react'
+import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Building, School, Briefcase, Shield } from 'lucide-react'
 import Navigation from '@/react-app/components/Navigation'
 import Footer from '@/react-app/components/Footer'
 
@@ -27,13 +27,12 @@ export default function AboutPage() {
   ]
 
   const researchAreas = [
-    { name: 'Artificial Intelligence', icon: Brain },
-    { name: 'Deep Learning', icon: Monitor },
-    { name: 'Generative AI', icon: Code },
-    { name: 'Computer Vision', icon: Monitor },
-    { name: 'Natural Language Processing', icon: BookOpen },
-    { name: 'Robotics and AI', icon: Brain },
-    { name: 'AI in Healthcare', icon: Heart }
+    { name: 'Emerging Technologies', icon: Brain },
+    { name: 'Critical Cyber Technologies', icon: Monitor },
+    { name: 'Artificial Intelligence & Machine Learning (AI/ML)', icon: Code },
+    { name: 'National Security & Strategic Technologies', icon: Target },
+    { name: 'Cyberspace Operations & Digital Defence', icon: Shield },
+    { name: 'Technology Governance & Tech Policy', icon: BookOpen }
   ]
 
   const knowledgePartners = [
@@ -66,8 +65,8 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6 animate-in fade-in slide-in-from-top duration-700">
-              <span className="text-2xl">🌐</span>
-              <span className="text-sm font-semibold text-gray-700">Global Initiative</span>
+              <span className="text-2xl">🇮🇳</span>
+              <span className="text-sm font-semibold text-gray-700">National Initiative</span>
             </div>
 
             {/* Main Heading */}
@@ -78,8 +77,40 @@ export default function AboutPage() {
             {/* Mission Statement */}
             <div className="max-w-4xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
               <div className="glass-effect rounded-3xl p-8 md:p-12">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
+                  Tech For Bharat is a national initiative dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation, strengthen national capabilities, and contribute meaningfully to the technological advancement of Bharat.
+                </p>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Tech For Bharat is an initiative dedicated to empowering youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation and contribute meaningfully to technological advancement.
+                  We serve as a comprehensive learning platform offering high-impact training, workshops, and hands-on programmes across critical technology domains, including:
+                </p>
+                <ul className="text-lg md:text-xl text-gray-700 leading-relaxed mt-4 text-left max-w-3xl mx-auto space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Emerging Technologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Critical Cyber Technologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Artificial Intelligence & Machine Learning (AI/ML)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>National Security & Strategic Technologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Cyberspace Operations & Digital Defence</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span>Technology Governance & Tech Policy</span>
+                  </li>
+                </ul>
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-6">
+                  At Tech For Bharat, we believe that the nation's progress rests on empowering young minds with the right knowledge, tools, and opportunities. Our initiative aims to nurture skilled professionals, tech leaders, and innovators who will safeguard India's digital future and accelerate its technological growth.
                 </p>
               </div>
             </div>
@@ -112,7 +143,7 @@ export default function AboutPage() {
                 Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of the digital landscape.
+                Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of India's digital landscape.
               </p>
             </div>
           </div>
@@ -162,15 +193,15 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                Research <span className="gradient-text">Areas</span>
+                Focus <span className="gradient-text">Areas</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Our programs cover cutting-edge technologies and research domains
+                Our programs cover critical technology domains for national development
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {researchAreas.map((area, index) => {
                 const Icon = area.icon
                 return (
