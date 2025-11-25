@@ -34,16 +34,26 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Tech Education Background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-indigo-900/80 to-blue-900/80"></div>
+        </div>
+        
         {/* Background Elements */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-1">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.1),transparent_50%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_50%)]" />
         </div>
         
         {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute bottom-40 right-20 w-32 h-32 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-700" />
-        <div className="absolute top-1/2 right-10 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl animate-pulse delay-1000" />
+        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-2xl animate-pulse z-10" />
+        <div className="absolute bottom-40 right-20 w-32 h-32 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-700 z-10" />
+        <div className="absolute top-1/2 right-10 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl animate-pulse delay-1000 z-10" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
           <div className="max-w-6xl mx-auto text-center">
