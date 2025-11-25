@@ -101,42 +101,66 @@ export default function AboutPage() {
 
             {/* Mission Statement */}
             <div className="max-w-4xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
-              <div className="glass-effect rounded-3xl p-8 md:p-12">
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                  Tech For Bharat is a national initiative dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation, strengthen national capabilities, and contribute meaningfully to the technological advancement of Bharat.
-                </p>
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  We serve as a comprehensive learning platform offering high-impact training, workshops, and hands-on programmes across critical technology domains, including:
-                </p>
-                <ul className="text-lg md:text-xl text-gray-700 leading-relaxed mt-4 text-left max-w-3xl mx-auto space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Emerging Technologies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Critical Cyber Technologies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Artificial Intelligence & Machine Learning (AI/ML)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>National Security & Strategic Technologies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Cyberspace Operations & Digital Defence</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-600 mr-2">•</span>
-                    <span>Technology Governance & Tech Policy</span>
-                  </li>
-                </ul>
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-6">
-                  At Tech For Bharat, we believe that the nation's progress rests on empowering young minds with the right knowledge, tools, and opportunities. Our initiative aims to nurture skilled professionals, tech leaders, and innovators who will safeguard India's digital future and accelerate its technological growth.
-                </p>
+              <div className="glass-effect rounded-3xl p-8 md:p-12 border-2 border-purple-200 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                <div className="relative">
+                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full opacity-10"></div>
+                  <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full opacity-10"></div>
+                  
+                  <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 relative z-10 font-medium">
+                    Tech For Bharat is a national initiative dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation, strengthen national capabilities, and contribute meaningfully to the technological advancement of Bharat.
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-6 mb-6 border border-purple-100 relative z-10">
+                    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-medium">
+                      We serve as a comprehensive learning platform offering high-impact training, workshops, and hands-on programmes across critical technology domains, including:
+                    </p>
+                  </div>
+                  
+                  <ul className="text-lg md:text-xl text-gray-800 leading-relaxed mt-4 text-left max-w-3xl mx-auto space-y-3 relative z-10">
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">1</span>
+                      </div>
+                      <span className="font-medium">Emerging Technologies</span>
+                    </li>
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">2</span>
+                      </div>
+                      <span className="font-medium">Critical Cyber Technologies</span>
+                    </li>
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">3</span>
+                      </div>
+                      <span className="font-medium">Artificial Intelligence & Machine Learning (AI/ML)</span>
+                    </li>
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">4</span>
+                      </div>
+                      <span className="font-medium">National Security & Strategic Technologies</span>
+                    </li>
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">5</span>
+                      </div>
+                      <span className="font-medium">Cyberspace Operations & Digital Defence</span>
+                    </li>
+                    <li className="flex items-start group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <span className="text-white font-bold text-sm">6</span>
+                      </div>
+                      <span className="font-medium">Technology Governance & Tech Policy</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="mt-8 p-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl text-white relative z-10 group hover:scale-[1.02] transition-all duration-300">
+                    <p className="text-lg md:text-xl leading-relaxed font-medium">
+                      At Tech For Bharat, we believe that the nation's progress rests on empowering young minds with the right knowledge, tools, and opportunities. Our initiative aims to nurture skilled professionals, tech leaders, and innovators who will safeguard India's digital future and accelerate its technological growth.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -148,7 +172,7 @@ export default function AboutPage() {
                   return (
                     <div
                       key={index}
-                      className="glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 group hover:shadow-xl"
+                      className="glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 group hover:shadow-xl border-2 border-purple-100"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
                       <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
@@ -163,11 +187,11 @@ export default function AboutPage() {
             </div>
 
             {/* Vision Statement */}
-            <div className="mt-16 max-w-3xl mx-auto glass-effect rounded-3xl p-8 md:p-10 animate-in fade-in duration-700 delay-400">
+            <div className="mt-16 max-w-3xl mx-auto glass-effect rounded-3xl p-8 md:p-10 animate-in fade-in duration-700 delay-400 border-2 border-purple-200">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
                 Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of India's digital landscape.
               </p>
             </div>
