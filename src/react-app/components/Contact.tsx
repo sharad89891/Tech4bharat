@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Phone, Mail, Users, MapPin, Send, CheckCircle } from 'lucide-react'
-import { Link } from 'react-router'
+import { Phone, Users, MapPin, Send, CheckCircle } from 'lucide-react'
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
