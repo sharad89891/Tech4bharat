@@ -52,14 +52,14 @@ export default function AboutPage() {
             {/* Header Row */}
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-8">
               <div className="flex-1">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Tech For Bharat</span>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-gray-800">
+                  Tech For Bharat
                 </h1>
                 <p className="text-lg sm:text-xl text-gray-800 max-w-2xl leading-relaxed">
                   Empowering India's youth with cutting-edge technology skills for tomorrow's challenges.
                 </p>
               </div>
-              
+
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-3 bg-white/30 backdrop-blur-md rounded-2xl p-4 shadow-lg w-full lg:w-auto border border-white/40">
                 <div className="text-center">

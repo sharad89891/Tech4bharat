@@ -61,25 +61,23 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-24 sm:pt-40 sm:pb-32">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Tech Background" 
-            className="w-full h-full object-cover"
-          />
+      {/* Hero Section with Parallax Effect */}
+      <section className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 z-0 bg-fixed bg-center bg-no-repeat bg-cover"
+          style={{ 
+            backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+          }}
+        >
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-2xl">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
-                Tech For Bharat
-              </span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white">
+              Tech For Bharat
             </h1>
-            <p className="text-base sm:text-xl md:text-2xl text-white mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-2xl font-bold rounded-2xl py-3 px-4 sm:py-4 sm:px-6 inline-block">
+            <p className="text-base sm:text-xl md:text-2xl text-white mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed font-bold rounded-2xl py-3 px-4 sm:py-4 sm:px-6 inline-block">
               Empowering India's youth with cutting-edge technology skills for a brighter future
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center rounded-2xl p-3 sm:p-4 inline-flex mx-auto">
