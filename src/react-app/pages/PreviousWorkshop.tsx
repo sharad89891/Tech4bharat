@@ -226,7 +226,7 @@ export default function PreviousWorkshopPage() {
             {/* Key Highlights */}
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-6 border border-blue-200">
               <h3 className="text-base sm:text-lg font-bold text-center text-gray-800 mb-3 sm:mb-4">Program Highlights</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4">
                 <div className="text-center p-2">
                   <div className="text-xl sm:text-2xl font-bold text-purple-600 mb-1">45+</div>
                   <div className="text-xs sm:text-sm text-gray-700">Selected Interns</div>
