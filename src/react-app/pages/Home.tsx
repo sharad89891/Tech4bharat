@@ -156,6 +156,17 @@ export default function Home() {
                       <div className="font-semibold text-gray-900 text-sm sm:text-base">COEP TECH UNIVERSITY</div>
                     </div>
                   </div>
+                  
+                  {/* Register Button */}
+                  <div className="mt-6">
+                    <Link 
+                      to="/register" 
+                      className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                    >
+                      Register Now
+                    </Link>
+                  </div>
+
                 </div>
                 
                 <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl p-4 sm:p-6 text-white shadow-lg">

@@ -24,7 +24,7 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg py-3' : 'bg-white/20 backdrop-blur-md py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-3' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -40,18 +40,24 @@ export default function Navigation() {
               <Link
                 key={link.name}
                 to={link.href}
-                className={`font-medium transition-colors duration-200 ${
+                className={`font-medium transition-all duration-300 ${
                   location.pathname === link.href
                     ? 'text-purple-600'
-                    : 'text-gray-900 hover:text-purple-600'
-                }`}
+                    : isScrolled 
+                      ? 'text-gray-900 hover:text-purple-600' 
+                      : 'text-white hover:text-blue-100'
+                } ${link.name === 'Upcoming Workshop' ? 'hover:scale-105' : ''}`}
               >
                 {link.name}
               </Link>
             ))}
             <Link
               to="/register"
-              className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                isScrolled 
+                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:shadow-lg hover:scale-105' 
+                  : 'bg-white/20 backdrop-blur-md text-white hover:bg-white/30'
+              }`}
             >
               Register
             </Link>
@@ -59,7 +65,7 @@ export default function Navigation() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-gray-700"
+            className={`md:hidden ${isScrolled ? 'text-gray-700' : 'text-white'}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
