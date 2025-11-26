@@ -1,20 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Menu, X } from 'lucide-react'
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(true) // Changed default to true
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
-
-  // Removed scroll effect since we want navbar to always be white
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 20)
-  //   }
-  //   window.addEventListener('scroll', handleScroll)
-  //   return () => window.removeEventListener('scroll', handleScroll)
-  // }, [])
 
   const navLinks = [
     { name: 'Home', href: '/' },
