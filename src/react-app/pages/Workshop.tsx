@@ -24,7 +24,7 @@ export default function WorkshopPage() {
             {/* Desktop Layout - Image on left, Info and Registration on right */}
             <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               {/* Workshop Poster */}
-              <div className="rounded-2xl overflow-hidden border-2 border-purple-200 shadow-xl">
+              <div className="rounded-2xl overflow-hidden border-4 border-purple-800 shadow-xl">
                 <img
                   src="https://mocha-cdn.com/019aac49-d960-7ba3-a8eb-167145646896/WhatsApp-Image-2025-11-23-at-12.39.17-AM-(1).jpeg"
                   alt="Digital and Tech Policy Workshop - December 18-23, 2025"
@@ -137,7 +137,7 @@ export default function WorkshopPage() {
             {/* Mobile/Tablet Layout - Stacked */}
             <div className="lg:hidden">
               {/* Workshop Poster */}
-              <div className="rounded-2xl overflow-hidden mb-8 border-2 border-purple-200 shadow-xl">
+              <div className="rounded-2xl overflow-hidden mb-8 border-4 border-purple-800 shadow-xl">
                 <img
                   src="https://mocha-cdn.com/019aac49-d960-7ba3-a8eb-167145646896/WhatsApp-Image-2025-11-23-at-12.39.17-AM-(1).jpeg"
                   alt="Digital and Tech Policy Workshop - December 18-23, 2025"
@@ -389,16 +389,6 @@ export default function WorkshopPage() {
                         <h4 className="font-semibold text-gray-800">Certification:</h4>
                         <p className="text-gray-700 ml-4">
                           A digital certificate of participation will be awarded upon submission of assignments and meeting attendance criteria
-                        </p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-800">Registration:</h4>
-                        <p className="text-gray-700 ml-4">
-                          Registration Link: <a href="https://forms.gle/tUCdykCbaD4NPEhv7" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">https://forms.gle/tUCdykCbaD4NPEhv7</a>
-                        </p>
-                        <p className="text-gray-700 ml-4 mt-1">
-                          Contact Email: <a href="mailto:techforbharat2025@gmail.com" className="text-purple-600 hover:underline">techforbharat2025@gmail.com</a>
                         </p>
                       </div>
                     </div>

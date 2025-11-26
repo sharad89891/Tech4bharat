@@ -44,7 +44,7 @@ export default function Gallery() {
           {/* Marquee Gallery */}
           <div className="relative h-48 overflow-hidden rounded-xl">
             {/* Marquee animation container */}
-            <div className="absolute inset-0 flex animate-marquee whitespace-nowrap">
+            <div className="absolute inset-0 flex" style={{ animation: 'marquee 30s linear infinite' }}>
               {/* First set of images */}
               {images.map((image, index) => (
                 <div
@@ -56,7 +56,7 @@ export default function Gallery() {
                     <img
                       src={image.url}
                       alt={image.title}
-                      className="absolute inset-0 w-full h-full object-contain"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Gallery() {
                     <img
                       src={image.url}
                       alt={image.title}
-                      className="absolute inset-0 w-full h-full object-contain"
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
                   </div>
                 </div>
@@ -93,15 +93,12 @@ export default function Gallery() {
                 transform: translateX(-50%);
               }
             }
-            .animate-marquee {
-              animation: marquee 30s linear infinite;
-            }
           `}</style>
           
           {/* Lightbox Modal */}
           {selectedImage && (
             <div
-              className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-in fade-in duration-200"
+              className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
               onClick={() => setSelectedImage(null)}
             >
               <button

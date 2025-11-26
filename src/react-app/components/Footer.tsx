@@ -34,11 +34,6 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gallery" className="text-gray-300 hover:text-blue-400 transition-colors">
-                    Gallery
-                  </Link>
-                </li>
-                <li>
                   <Link to="/contact" className="text-gray-300 hover:text-blue-400 transition-colors">
                     Contact
                   </Link>
@@ -72,7 +67,7 @@ export default function Footer() {
               <ul className="space-y-2 text-gray-300">
                 <li>🎓 Digital & Tech Policy Workshop</li>
                 <li>📅 18-23 December 2025</li>
-                <li>📍 University Campus</li>
+                <li>📍 COEP TECH UNIVERSITY</li>
                 <li>🤝 University Collaboration</li>
               </ul>
             </div>

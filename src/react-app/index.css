@@ -29,3 +29,13 @@
     @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
   }
 }
+
+/* Animation styles for marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -18,14 +18,13 @@ export default function Navigation() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Past Workshop', href: '/previous-workshop' },
-    { name: 'Past Internship', href: '/past-internship' },
+    { name: 'Previous Activities', href: '/previous-workshop' },
     { name: 'Upcoming Workshop', href: '/workshop' },
     { name: 'Contact', href: '/contact' }
   ]
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg py-3' : 'bg-white/20 backdrop-blur-md py-6'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -44,7 +43,7 @@ export default function Navigation() {
                 className={`font-medium transition-colors duration-200 ${
                   location.pathname === link.href
                     ? 'text-purple-600'
-                    : 'text-gray-700 hover:text-purple-600'
+                    : 'text-gray-900 hover:text-purple-600'
                 }`}
               >
                 {link.name}
@@ -78,7 +77,7 @@ export default function Navigation() {
                   className={`font-medium transition-colors duration-200 ${
                     location.pathname === link.href
                       ? 'text-purple-600'
-                      : 'text-gray-700 hover:text-purple-600'
+                      : 'text-gray-900 hover:text-purple-600'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

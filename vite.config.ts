@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5191,
-    strictPort: true,
+    strictPort: false,
     allowedHosts: true,
   },
   build: {

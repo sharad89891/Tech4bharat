@@ -1,4 +1,4 @@
-import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Shield, School, Building, Briefcase } from 'lucide-react'
+import { Target, Users, Lightbulb, TrendingUp, BookOpen, Brain, Code, Monitor, Shield, School, Building, Briefcase, ChevronRight } from 'lucide-react'
 import Navigation from '@/react-app/components/Navigation'
 import Footer from '@/react-app/components/Footer'
 
@@ -46,203 +46,184 @@ export default function AboutPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        {/* Background */}
-        <div className="absolute inset-0 gradient-bg" />
-
-        {/* Animated Gradients */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.1),transparent_50%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_50%)]" />
-        </div>
-
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute bottom-40 right-20 w-32 h-32 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-700" />
-        <div className="absolute top-1/2 right-10 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl animate-pulse delay-1000" />
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-6xl mx-auto text-center">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6 animate-in fade-in slide-in-from-top duration-700">
-              <span className="text-2xl">🇮🇳</span>
-              <span className="text-sm font-semibold text-gray-700">National Initiative</span>
+      <section className="relative py-20 pt-24 overflow-hidden gradient-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Header Row */}
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-12">
+              <div className="flex-1">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Tech For Bharat</span>
+                </h1>
+                <p className="text-xl text-gray-800 max-w-2xl leading-relaxed">
+                  Empowering India's youth with cutting-edge technology skills for tomorrow's challenges.
+                </p>
+              </div>
+              
+              {/* Quick Stats */}
+              <div className="grid grid-cols-2 gap-4 bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg w-full lg:w-auto border border-white/40">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-800">500+</div>
+                  <div className="text-gray-800">Students Trained</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-800">12+</div>
+                  <div className="text-gray-800">Programs</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-800">6</div>
+                  <div className="text-gray-800">Research Areas</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-800">3</div>
+                  <div className="text-gray-800">Knowledge Partners</div>
+                </div>
+              </div>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-100">
-              <span className="gradient-text">Tech For Bharat</span>
-            </h1>
-
-            {/* Mission Statement */}
-            <div className="max-w-4xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
-              <div className="glass-effect rounded-3xl p-8 md:p-12 border-2 border-purple-200 shadow-2xl hover:shadow-3xl transition-all duration-500">
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full opacity-10"></div>
-                  <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full opacity-10"></div>
-                  
-                  <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 relative z-10 font-medium">
-                    Tech For Bharat is a national initiative dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. Our mission is to build a future-ready generation equipped to drive innovation, strengthen national capabilities, and contribute meaningfully to the technological advancement of Bharat.
-                  </p>
-                  
-                  <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-6 mb-6 border border-purple-100 relative z-10">
-                    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-medium">
-                      We serve as a comprehensive learning platform offering high-impact training, workshops, and hands-on programmes across critical technology domains, including:
-                    </p>
+            {/* Mission & Vision - Side by Side */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+              {/* Mission */}
+              <div className="bg-white/30 backdrop-blur-md rounded-2xl p-8 border border-white/40 shadow-lg">
+                <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Mission</h2>
+                <p className="text-gray-800 leading-relaxed mb-6">
+                  Tech For Bharat is dedicated to empowering India's youth with cutting-edge skills in the rapidly evolving technology landscape. We build a future-ready generation equipped to drive innovation and contribute meaningfully to Bharat's technological advancement.
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Comprehensive learning platform with high-impact training</span>
                   </div>
-                  
-                  <ul className="text-lg md:text-xl text-gray-800 leading-relaxed mt-4 text-left max-w-3xl mx-auto space-y-3 relative z-10">
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">1</span>
-                      </div>
-                      <span className="font-medium">Emerging Technologies</span>
-                    </li>
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">2</span>
-                      </div>
-                      <span className="font-medium">Critical Cyber Technologies</span>
-                    </li>
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">3</span>
-                      </div>
-                      <span className="font-medium">Artificial Intelligence & Machine Learning (AI/ML)</span>
-                    </li>
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">4</span>
-                      </div>
-                      <span className="font-medium">National Security & Strategic Technologies</span>
-                    </li>
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">5</span>
-                      </div>
-                      <span className="font-medium">Cyberspace Operations & Digital Defence</span>
-                    </li>
-                    <li className="flex items-start group">
-                      <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <span className="text-white font-bold text-sm">6</span>
-                      </div>
-                      <span className="font-medium">Technology Governance & Tech Policy</span>
-                    </li>
-                  </ul>
-                  
-                  <div className="mt-8 p-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl text-white relative z-10 group hover:scale-[1.02] transition-all duration-300">
-                    <p className="text-lg md:text-xl leading-relaxed font-medium">
-                      At Tech For Bharat, we believe that the nation's progress rests on empowering young minds with the right knowledge, tools, and opportunities. Our initiative aims to nurture skilled professionals, tech leaders, and innovators who will safeguard India's digital future and accelerate its technological growth.
-                    </p>
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Hands-on workshops and practical programs</span>
+                  </div>
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Focus on critical technology domains</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Vision */}
+              <div className="bg-white/30 backdrop-blur-md rounded-2xl p-8 border border-white/40 shadow-lg">
+                <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Vision</h2>
+                <p className="text-gray-800 leading-relaxed mb-6">
+                  We envision nurturing skilled professionals, tech leaders, and innovators who will safeguard India's digital future and accelerate its technological growth through comprehensive programs and opportunities.
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Building tomorrow's tech leaders</span>
+                  </div>
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Creating opportunities for innovation</span>
+                  </div>
+                  <div className="flex items-start">
+                    <ChevronRight className="w-5 h-5 text-purple-600 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-800">Shaping India's digital landscape</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Pillars Grid - Centered */}
-            <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl">
+            {/* Core Pillars - Horizontal Layout */}
+            <div className="mb-4">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+                Core <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Pillars</span>
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {pillars.map((pillar, index) => {
                   const Icon = pillar.icon
                   return (
                     <div
                       key={index}
-                      className="glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 group hover:shadow-xl border-2 border-purple-100"
-                      style={{ animationDelay: `${index * 100}ms` }}
+                      className="bg-white/30 backdrop-blur-md rounded-xl p-6 hover:scale-105 transition-all duration-300 group hover:shadow-xl border border-white/40 h-full"
                     >
-                      <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
-                        <Icon className="w-7 h-7 text-white" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform mx-auto">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-lg font-bold mb-2 text-gray-800">{pillar.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">{pillar.description}</p>
+                      <h3 className="text-lg font-bold mb-2 text-gray-800 text-center">{pillar.title}</h3>
+                      <p className="text-gray-800 text-sm leading-relaxed text-center">{pillar.description}</p>
                     </div>
                   )
                 })}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Vision Statement */}
-            <div className="mt-16 max-w-3xl mx-auto glass-effect rounded-3xl p-8 md:p-10 animate-in fade-in duration-700 delay-400 border-2 border-purple-200">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-                Building Tomorrow's <span className="gradient-text">Tech Leaders</span>
-              </h2>
-              <p className="text-gray-700 leading-relaxed text-lg">
-                Through comprehensive programs, workshops, and internships, we're creating opportunities for students to learn, innovate, and lead in the technology sector. Join us in shaping the future of India's digital landscape.
-              </p>
+      {/* Key Sections - Compact Layout */}
+      <section className="py-8 bg-transparent">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Research Areas */}
+              <div>
+                <h2 className="text-3xl font-bold mb-6 text-center lg:text-left text-gray-800">
+                  Research <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Areas</span>
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {researchAreas.map((area, index) => {
+                    const Icon = area.icon
+                    return (
+                      <div
+                        key={index}
+                        className="bg-white/30 backdrop-blur-md rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-white/40 flex items-center"
+                      >
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                          <Icon className="w-5 h-5 text-white" />
+                        </div>
+                        <h3 className="font-semibold text-gray-900">{area.name}</h3>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+              
+              {/* Knowledge Partners */}
+              <div>
+                <h2 className="text-3xl font-bold mb-6 text-center lg:text-left text-gray-800">
+                  Knowledge <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Partners</span>
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {knowledgePartners.map((partner, index) => {
+                    const Icon = partner.icon
+                    return (
+                      <div
+                        key={index}
+                        className="bg-white/30 backdrop-blur-md rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-white/40 text-center"
+                      >
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                          <Icon className="w-5 h-5 text-white" />
+                        </div>
+                        <h3 className="font-semibold text-gray-900 text-sm">{partner.name}</h3>
+                        <p className="text-gray-800 text-xs">{partner.location}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Knowledge Partners - Smaller boxes */}
-      <section className="py-20 bg-white">
+      {/* Call to Action */}
+      <section className="py-10 bg-gradient-to-r from-purple-600 to-indigo-700 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                Knowledge <span className="gradient-text">Partners</span>
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Collaborating with leading institutions to deliver world-class education
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {knowledgePartners.map((partner, index) => {
-                const Icon = partner.icon
-                return (
-                  <div
-                    key={index}
-                    className="glass-effect rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100"
-                  >
-                    <div className="flex flex-col items-center text-center">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
-                        <Icon className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-lg font-bold mb-1 text-gray-800">{partner.name}</h3>
-                      <p className="text-gray-600 text-sm">{partner.location}</p>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Areas */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                Research <span className="gradient-text">Areas</span>
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6" />
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Our programs cover cutting-edge technologies and research domains
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {researchAreas.map((area, index) => {
-                const Icon = area.icon
-                return (
-                  <div
-                    key={index}
-                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50"
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-lg font-bold text-gray-800">{area.name}</h3>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Join the Tech Revolution</h2>
+            <p className="text-xl mb-8 text-purple-100 max-w-2xl mx-auto">
+              Be part of India's journey toward technological excellence. Register for our upcoming programs and workshops.
+            </p>
+            <button className="px-8 py-4 bg-white text-purple-600 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Register Now
+            </button>
           </div>
         </div>
       </section>
