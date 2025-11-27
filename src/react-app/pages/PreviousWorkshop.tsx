@@ -28,24 +28,32 @@ export default function PreviousWorkshopPage() {
 
   const internshipDetails = [
     { 
-      title: 'AI in Healthcare', 
-      description: 'Developing AI solutions for medical diagnosis and patient care' 
+      title: 'Artificial Intelligence', 
+      description: 'Foundational concepts and applications of AI in various domains' 
     },
     { 
-      title: 'Agricultural AI', 
-      description: 'Creating AI models for crop prediction and farming optimization' 
+      title: 'Deep Learning', 
+      description: 'Advanced neural network architectures and training techniques' 
     },
     { 
-      title: 'Smart Cities', 
-      description: 'Building AI-powered solutions for urban planning and management' 
-    },
-    { 
-      title: 'Natural Language Processing', 
-      description: 'Working on multilingual NLP models' 
+      title: 'Generative AI', 
+      description: 'Creating AI models for content generation and creative applications' 
     },
     { 
       title: 'Computer Vision', 
-      description: 'Developing vision systems for industrial automation' 
+      description: 'Developing vision systems for image and video analysis' 
+    },
+    { 
+      title: 'Natural Language Processing', 
+      description: 'Working on language understanding and generation models' 
+    },
+    { 
+      title: 'Robotics and AI', 
+      description: 'Integrating AI algorithms with robotic systems for autonomous behavior' 
+    },
+    { 
+      title: 'AI in Healthcare', 
+      description: 'Developing AI solutions for medical diagnosis and patient care' 
     }
   ]
 
@@ -176,11 +184,8 @@ export default function PreviousWorkshopPage() {
                 <span className="text-xs sm:text-sm font-semibold text-purple-600">Past Internship</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3">
-                University <span className="gradient-text">AI Internship</span>
+                Internship at <span className="gradient-text">Centre of Excellence in AI, VJTI</span>
               </h2>
-              <p className="text-base sm:text-lg text-gray-700 mb-2 px-2">
-                Centre of Excellence in Artificial Intelligence
-              </p>
               <p className="text-sm sm:text-base text-gray-600 mb-3 px-2">
                 6-week intensive program with hands-on research projects
               </p>
@@ -201,19 +206,6 @@ export default function PreviousWorkshopPage() {
                     <h3 className="text-base sm:text-lg font-bold text-gray-800">Duration</h3>
                     <p className="text-sm sm:text-base text-gray-600">June 15 - July 30, 2025</p>
                     <p className="text-xs sm:text-sm text-gray-600">(6 weeks)</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg">
-                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg sm:rounded-xl flex items-center justify-center">
-                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-base sm:text-lg font-bold text-gray-800">Location</h3>
-                    <p className="text-sm sm:text-base text-gray-600">University AI Lab</p>
-                    <p className="text-xs sm:text-sm text-gray-600">Location</p>
                   </div>
                 </div>
               </div>
@@ -274,11 +266,7 @@ export default function PreviousWorkshopPage() {
               <h3 className="text-base sm:text-lg font-bold text-center text-gray-800 mb-3">Organized By</h3>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
                 <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
-                  <span className="text-sm sm:font-semibold text-blue-700">COEP Tech University Pune</span>
-                </div>
-                <div className="hidden sm:block text-gray-400">+</div>
-                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />
                   <span className="text-sm sm:font-semibold text-purple-700">VJTI Mumbai</span>
                 </div>
               </div>

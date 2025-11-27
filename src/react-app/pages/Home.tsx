@@ -64,7 +64,7 @@ export default function Home() {
       {/* Hero Section with Parallax Effect */}
       <section className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden">
         <div 
-          className="absolute inset-0 z-0 bg-fixed bg-center bg-no-repeat bg-cover"
+          className="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover"
           style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
           }}
