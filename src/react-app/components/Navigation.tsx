@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Menu, X } from 'lucide-react'
+import logo from '@/react-app/assets/logo.png'
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -20,6 +21,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Tech For Bharat Logo" className="h-10 w-auto" />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 font-bold text-xl">
               Tech For Bharat
             </span>
