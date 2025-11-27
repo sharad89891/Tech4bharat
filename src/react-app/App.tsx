@@ -7,7 +7,7 @@ import PreviousWorkshopPage from "@/react-app/pages/PreviousWorkshop";
 import WorkshopPage from "@/react-app/pages/Workshop";
 // import GalleryPage from "@/react-app/pages/Gallery"; // Removed gallery page
 import ContactPage from "@/react-app/pages/Contact";
-import RegisterPage from "@/react-app/pages/Register";
+// import RegisterPage from "@/react-app/pages/Register"; // Removed registration page
 import ScrollToTop from "@/react-app/components/ScrollToTop";
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/workshop" element={<WorkshopPage />} />
         {/* <Route path="/gallery" element={<GalleryPage />} /> */} {/* Removed gallery route */}
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        {/* <Route path="/register" element={<RegisterPage />} /> */} {/* Removed registration route */}
       </Routes>
     </Router>
   );

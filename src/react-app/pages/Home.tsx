@@ -81,12 +81,14 @@ export default function Home() {
               Empowering India's youth with cutting-edge technology skills for a brighter future
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center rounded-2xl p-3 sm:p-4 inline-flex mx-auto">
-              <Link 
-                to="/register" 
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
               >
                 Join Our Program
-              </Link>
+              </a>
               <Link 
                 to="/about" 
                 className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -157,12 +159,14 @@ export default function Home() {
                   
                   {/* Register Button */}
                   <div className="mt-6">
-                    <Link 
-                      to="/register" 
+                    <a 
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                     >
                       Register Now
-                    </Link>
+                    </a>
                   </div>
 
                 </div>

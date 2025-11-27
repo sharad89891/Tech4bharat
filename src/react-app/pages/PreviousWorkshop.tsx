@@ -73,7 +73,7 @@ export default function PreviousWorkshopPage() {
                 <span className="text-xs sm:text-sm font-semibold text-purple-600">Past Workshop</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
-                AI Workshop by <span className="gradient-text">GenAI</span>
+                AI Workshop by <span className="gradient-text">BharatGen</span>
               </h2>
               <p className="text-base sm:text-lg text-gray-700 mb-2 px-2">
                 GenAI for Everyone, by Everyone
@@ -109,8 +109,8 @@ export default function PreviousWorkshopPage() {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-gray-800">Venue</h3>
-                    <p className="text-sm sm:text-base text-gray-600">AI Lab, Main Building</p>
-                    <p className="text-xs sm:text-sm text-gray-600">University Campus</p>
+                    <p className="text-sm sm:text-base text-gray-600">Cognizant Lab, AC Ground Floor</p>
+                    <p className="text-xs sm:text-sm text-gray-600">COEP Tech University Pune</p>
                   </div>
                 </div>
               </div>
@@ -148,11 +148,7 @@ export default function PreviousWorkshopPage() {
               <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
-                  <span className="text-sm sm:font-semibold text-blue-700">University Team</span>
-                </div>
-                <div className="hidden sm:block text-gray-400">+</div>
-                <div className="flex items-center gap-2">
-                  <span className="text-sm sm:font-semibold text-purple-700">GenAI</span>
+                  <span className="text-sm sm:font-semibold text-blue-700">COEP Tech University Pune</span>
                 </div>
               </div>
             </div>
@@ -279,11 +275,11 @@ export default function PreviousWorkshopPage() {
               <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
-                  <span className="text-sm sm:font-semibold text-blue-700">University</span>
+                  <span className="text-sm sm:font-semibold text-blue-700">COEP Tech University Pune</span>
                 </div>
                 <div className="hidden sm:block text-gray-400">+</div>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm sm:font-semibold text-purple-700">Centre of Excellence in AI</span>
+                  <span className="text-sm sm:font-semibold text-purple-700">VJTI Mumbai</span>
                 </div>
               </div>
             </div>

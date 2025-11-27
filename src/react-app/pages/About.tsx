@@ -221,9 +221,14 @@ export default function AboutPage() {
             <p className="text-lg mb-6 text-purple-100 max-w-2xl mx-auto">
               Be part of India's journey toward technological excellence. Register for our upcoming programs and workshops.
             </p>
-            <button className="px-6 py-3 bg-white text-purple-600 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white text-purple-600 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
+            >
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

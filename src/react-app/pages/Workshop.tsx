@@ -1,5 +1,4 @@
 import { Calendar, MapPin, ArrowRight, Users, Target, BookOpen, Award } from 'lucide-react'
-import { Link } from 'react-router'
 import Navigation from '@/react-app/components/Navigation'
 import Footer from '@/react-app/components/Footer'
 
@@ -67,7 +66,7 @@ export default function WorkshopPage() {
                         </div>
                         <div>
                           <h3 className="font-bold text-gray-800 text-sm">Location</h3>
-                          <p className="text-xs text-gray-600">University Campus</p>
+                          <p className="text-xs text-gray-600">COEP Tech University</p>
                         </div>
                       </div>
                     </div>
@@ -80,13 +79,13 @@ export default function WorkshopPage() {
                       <div className="bg-white rounded-xl p-4 shadow-md border border-purple-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-purple-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">Tech University</span></p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">COEP Tech University</span> Pune</p>
                         </div>
                       </div>
                       <div className="bg-white rounded-xl p-4 shadow-md border border-indigo-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-indigo-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">University</span></p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">VJTI</span> Mumbai</p>
                         </div>
                       </div>
                     </div>
@@ -99,13 +98,13 @@ export default function WorkshopPage() {
                       <div className="bg-white rounded-xl p-4 shadow-md border border-green-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-green-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">Research Center</span></p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">CDTIES</span>, IIT Bombay</p>
                         </div>
                       </div>
                       <div className="bg-white rounded-xl p-4 shadow-md border border-emerald-100">
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-emerald-600 rounded-full" />
-                          <p className="text-xs text-gray-700"><span className="font-semibold">Research Foundation</span></p>
+                          <p className="text-xs text-gray-700"><span className="font-semibold">Observer Research Foundation</span></p>
                         </div>
                       </div>
                     </div>
@@ -120,13 +119,15 @@ export default function WorkshopPage() {
                   <p className="text-sm text-gray-700 mb-4">
                     Secure your spot at this exclusive workshop on Digital and Tech Policy. Limited seats available!
                   </p>
-                  <Link
-                    to="/register"
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   >
                     Register Now
                     <ArrowRight className="w-3 h-3" />
-                  </Link>
+                  </a>
                   <p className="text-xs text-gray-500 mt-3">
                     By registering, you agree to receive updates about the workshop via email.
                   </p>
@@ -191,13 +192,13 @@ export default function WorkshopPage() {
                     <div className="bg-white rounded-xl p-4 shadow-md border border-purple-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-purple-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">Tech University</span></p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">COEP Tech University</span> Pune</p>
                       </div>
                     </div>
                     <div className="bg-white rounded-xl p-4 shadow-md border border-indigo-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-indigo-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">University</span></p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">VJTI</span> Mumbai</p>
                       </div>
                     </div>
                   </div>
@@ -210,13 +211,13 @@ export default function WorkshopPage() {
                     <div className="bg-white rounded-xl p-4 shadow-md border border-green-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-green-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">Research Center</span></p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">CDTIES</span>, IIT Bombay</p>
                       </div>
                     </div>
                     <div className="bg-white rounded-xl p-4 shadow-md border border-emerald-100">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-emerald-600 rounded-full" />
-                        <p className="text-xs text-gray-700"><span className="font-semibold">Research Foundation</span></p>
+                        <p className="text-xs text-gray-700"><span className="font-semibold">Observer Research Foundation</span></p>
                       </div>
                     </div>
                   </div>
@@ -231,13 +232,15 @@ export default function WorkshopPage() {
                 <p className="text-base text-gray-700 max-w-xl mx-auto mb-6">
                   Secure your spot at this exclusive workshop on Digital and Tech Policy. Limited seats available!
                 </p>
-                <Link
-                  to="/register"
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   Register Now
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
                 <p className="text-xs text-gray-500 mt-4">
                   By registering, you agree to receive updates about the workshop via email.
                 </p>
@@ -273,7 +276,7 @@ export default function WorkshopPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800">Venue:</h4>
-                        <p className="text-gray-700">University Campus</p>
+                        <p className="text-gray-700">COEP Tech University</p>
                       </div>
                     </div>
                   </div>
@@ -288,15 +291,15 @@ export default function WorkshopPage() {
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Organizers:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                          <li>Tech University</li>
-                          <li>University</li>
+                          <li>COEP Tech University Pune</li>
+                          <li>VJTI Mumbai</li>
                         </ul>
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Knowledge Partners:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                          <li>Research Center</li>
-                          <li>Research Foundation</li>
+                          <li>CDTIES, IIT Bombay</li>
+                          <li>Observer Research Foundation</li>
                         </ul>
                       </div>
                     </div>

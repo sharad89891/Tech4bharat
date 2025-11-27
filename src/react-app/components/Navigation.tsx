@@ -40,12 +40,14 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/register"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:shadow-lg hover:scale-105`}
             >
               Register
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -75,13 +77,15 @@ export default function Navigation() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                to="/register"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfB6dfx5eTyU3XvwGvc9xisKab9hFMlJxtkmYkD0825LrBFrQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Register
-              </Link>
+              </a>
             </div>
           </div>
         )}
