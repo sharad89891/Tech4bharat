@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Phone, Users, MapPin, Send, CheckCircle } from 'lucide-react'
+import { Mail, Users, MapPin, Send, CheckCircle } from 'lucide-react'
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -39,16 +39,12 @@ export default function Contact() {
       })
     }, 3000)
   }
+  
   const contacts = [
     {
-      name: 'SURAJ',
-      phone: '9423076154',
-      role: 'Program Coordinator'
-    },
-    {
-      name: 'ANWAY',
-      phone: '8275173653',
-      role: 'Technical Lead'
+      name: 'Tech For Bharat',
+      email: 'info@tech4bharat.com',
+      role: 'General Inquiries'
     }
   ]
 
@@ -69,30 +65,28 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
-            {/* Contact Cards */}
+          {/* Contact Card - Centered and properly aligned for big screens */}
+          <div className="max-w-4xl mx-auto mb-12 sm:mb-16">
             {contacts.map((contact, index) => (
               <div
                 key={index}
-                className="glass-effect rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:scale-[1.02] transition-transform duration-300"
+                className="glass-effect rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 hover:scale-[1.02] transition-transform duration-300 max-w-3xl mx-auto"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center">
-                    <Users className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl sm:rounded-3xl flex items-center justify-center mb-6">
+                    <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-800">{contact.name}</h3>
-                    <p className="text-sm text-gray-600">{contact.role}</p>
-                  </div>
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">{contact.name}</h3>
+                  <p className="text-lg sm:text-xl text-gray-600 mb-6">{contact.role}</p>
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-blue-50 rounded-xl sm:rounded-2xl hover:bg-blue-100 transition-colors group"
+                  >
+                    <Mail className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600 group-hover:rotate-12 transition-transform" />
+                    <span className="text-xl sm:text-2xl font-semibold text-gray-800">{contact.email}</span>
+                  </a>
                 </div>
-                <a
-                  href={`tel:${contact.phone}`}
-                  className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-blue-50 rounded-lg sm:rounded-xl hover:bg-blue-100 transition-colors group"
-                >
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 group-hover:rotate-12 transition-transform" />
-                  <span className="text-base sm:text-lg font-semibold text-gray-800">{contact.phone}</span>
-                </a>
               </div>
             ))}
           </div>
